@@ -22,7 +22,7 @@ body{
 }
 .light-mode{
     background-color: var(--text);
-    color: var(--bg); 
+    color: var(--text); 
 }
  /* Switch container */
  .switch {
@@ -78,7 +78,8 @@ body{
  /* Mode label styling */
  #mode-label {
      font-weight: bold;
-     margin-left: 10px;
+     font-size: 15px;
+     margin-left: 0px;
  }
 .icon-leetcode {
     width: 24px;
