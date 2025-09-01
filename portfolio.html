@@ -24,11 +24,11 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <label class="switch">
+<!--                 <label class="switch">
                     <input type="checkbox" id="theme-toggle">
                     <span class="slider"></span>
                 </label>
-                <span id="mode-label">Light Mode</span> 
+                <span id="mode-label">Light Mode</span>  -->
             </div>
             <!-- <button class="btn btn-theme" id="toggle-theme" onclick="changeTheme()">Light Mode</button> -->
             <!--  -->
@@ -383,31 +383,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         //Theme change (dark and light mode)
-        const body = document.body;
-            const toggle = document.getElementById('theme-toggle');
-            const label = document.getElementById('mode-label');
+        // const body = document.body;
+        //     const toggle = document.getElementById('theme-toggle');
+        //     const label = document.getElementById('mode-label');
 
-            // 🟢 On page load → check saved theme
-            if (localStorage.getItem("theme") === "light") {
-                body.classList.add("light-mode");
-                toggle.checked = true;
-                label.textContent = "Dark Mode 🌙";
-            } else {
-                label.textContent = "Light Mode 🌞";
-            }
+        //     // 🟢 On page load → check saved theme
+        //     if (localStorage.getItem("theme") === "light") {
+        //         body.classList.add("light-mode");
+        //         toggle.checked = true;
+        //         label.textContent = "Dark Mode 🌙";
+        //     } else {
+        //         label.textContent = "Light Mode 🌞";
+        //     }
 
-            // 🟢 Toggle switch handler
-            toggle.addEventListener('change', function () {
-                if (this.checked) {
-                    body.classList.add("light-mode");
-                    localStorage.setItem("theme", "light");
-                    label.textContent = "Dark Mode 🌙";
-                } else {
-                    body.classList.remove("light-mode");
-                    localStorage.setItem("theme", "dark");
-                    label.textContent = "Light Mode 🌞";
-                }
-            });
+        //     // 🟢 Toggle switch handler
+        //     toggle.addEventListener('change', function () {
+        //         if (this.checked) {
+        //             body.classList.add("light-mode");
+        //             localStorage.setItem("theme", "light");
+        //             label.textContent = "Dark Mode 🌙";
+        //         } else {
+        //             body.classList.remove("light-mode");
+        //             localStorage.setItem("theme", "dark");
+        //             label.textContent = "Light Mode 🌞";
+        //         }
+        //     });
 
 
 
