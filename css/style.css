@@ -98,26 +98,23 @@ body{
     color: var(--accent)
 }
  .hero {
-    min-height: 90vh;
+    min-height: 100vh;
      padding: 80px 20px;
      display: grid;
     place-items: center;
      text-align: center;
-     background: #1f3143;
-     color: white;
+     background: linear-gradient(180deg, #1f3143 0%, #4b5560 60%);
+     color: #b6cde5;
  }
  .profile{
-    width: 250px;
-    height: 300px;
-    border: 5px solid var(--accent);
-    border-radius: 45%;
+    width: 400px;
+    height: 550px;
     object-fit: cover;
-    box-shadow: 0px 0px 10px 10px var(--soft);
-    transition: all 0.3s ease;
+    transition: filter 0.3s ease;
 }
 .profile:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 5px 6px var(--accent);
+    filter: drop-shadow(5px 5px 10px var(--text));
 }
 .section {
      padding: 80px 0;
